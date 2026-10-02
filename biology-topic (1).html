@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Biology Lesson</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef7ee;
+            color: #173b20;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .lesson-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #176b35,
+                    #2e9d55
+                );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+            box-shadow:
+                0 4px 10px
+                rgba(0,0,0,0.2);
+        }
+
+        .lesson-header h1 {
+
+            margin: 0;
+
+            font-size: 30px;
+
+        }
+
+        .lesson-header p {
+
+            margin: 8px 0 0;
+
+            font-size: 15px;
+
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
+
+        .lesson-container {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 20px;
+
+        }
+
+
+        .lesson-card {
+
+            background: white;
+
+            border-radius: 14px;
+
+            padding: 22px;
+
+            box-shadow:
+                0 4px 12px
+                rgba(0,0,0,0.12);
+
+        }
+
+
+        /* =========================
+           LESSON TITLE
+        ========================= */
+
+        #lessonTitle {
+
+            color: #176b35;
+
+            text-align: center;
+
+            font-size: 28px;
+
+            margin-top: 0;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        #lessonLevel {
+
+            text-align: center;
+
+            color: #55705b;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================= */
+
+        #lessonContent {
+
+            line-height: 1.7;
+
+            font-size: 16px;
+
+        }
+
+
+        #lessonContent h2 {
+
+            color: #176b35;
+
+            border-bottom:
+                2px solid #d7ead9;
+
+            padding-bottom: 8px;
+
+        }
+
+
+        #lessonContent h3 {
+
+            color: #238346;
+
+            margin-top: 25px;
+
+        }
+
+
+        #lessonContent p {
+
+            margin: 12px 0;
+
+        }
+
+
+        #lessonContent ul,
+        #lessonContent ol {
+
+            padding-left: 25px;
+
+        }
+
+
+        #lessonContent li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+        /* =========================
+           TABLES
+        ========================= */
+
+        #lessonContent table {
+
+            width: 100%;
+
+            border-collapse:
+                collapse;
+
+            margin: 20px 0;
+
+            background: #fafdfa;
+
+        }
+
+
+        #lessonContent th,
+        #lessonContent td {
+
+            border:
+                1px solid #bcd8c1;
+
+            padding: 10px;
+
+            text-align: left;
+
+        }
+
+
+        #lessonContent th {
+
+            background: #176b35;
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
+
+        .back-button {
+
+            display: block;
+
+            width: fit-content;
+
+            margin: 25px auto 5px;
+
+            text-decoration: none;
+
+        }
+
+
+        .back-button button {
+
+            border: none;
+
+            background: #176b35;
+
+            color: white;
+
+            padding: 12px 20px;
+
+            border-radius: 9px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+
+        .back-button button:hover {
+
+            background: #238346;
+
+        }
+
+
+        /* =========================
+           TOP BUTTON
+        ========================= */
+
+        .top-button {
+
+            display: block;
+
+            margin: 10px auto 25px;
+
+            border: none;
+
+            background: #dff2e2;
+
+            color: #176b35;
+
+            padding: 10px 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: #55705b;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .lesson-container {
+
+                padding: 12px;
+
+            }
+
+            .lesson-card {
+
+                padding: 16px;
+
+            }
+
+            #lessonTitle {
+
+                font-size: 23px;
+
+            }
+
+            #lessonContent {
+
+                font-size: 15px;
+
+            }
+
+            #lessonContent table {
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="lesson-header">
+
+    <h1>🧬 Biology</h1>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="lesson-container">
+
+    <div class="lesson-card">
+
+        <h1 id="lessonTitle">
+            Biology Lesson
+        </h1>
+
+        <p id="lessonLevel">
+            Loading lesson...
+        </p>
+
+
+        <div id="lessonContent">
+
+            <p>
+                Please wait while the lesson loads...
+            </p>
+
+        </div>
+
+
+        <!-- BACK -->
+
+        <a
+            href="biology.html"
+            class="back-button"
+        >
+
+            <button>
+                ← Back to Biology Topics
+            </button>
+
+        </a>
+
+
+        <!-- TOP -->
+
+        <button
+            class="top-button"
+            onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })"
+        >
+
+            ↑ Back to Top
+
+        </button>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <p>
+        🇺🇬 Uganda Lower Secondary Biology
+    </p>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     LOAD BIOLOGY DATA FIRST
+========================= -->
+
+<script src="biology-data.js"></script>
+
+
+
+<!-- =========================
+     DISPLAY SELECTED TOPIC
+========================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* Get selected topic */
+
+        const selectedTopic =
+            localStorage.getItem(
+                "selectedBiologyTopic"
+            );
+
+
+        /* Elements */
+
+        const titleElement =
+            document.getElementById(
+                "lessonTitle"
+            );
+
+        const levelElement =
+            document.getElementById(
+                "lessonLevel"
+            );
+
+        const contentElement =
+            document.getElementById(
+                "lessonContent"
+            );
+
+
+        /* Check topic */
+
+        if (
+            !selectedTopic ||
+            !biologyData[selectedTopic]
+        ) {
+
+            titleElement.innerHTML =
+                "Biology Topic Not Found";
+
+            levelElement.innerHTML =
+                "";
+
+            contentElement.innerHTML = `
+
+                <h3>⚠️ Topic not found</h3>
+
+                <p>
+                    Please return to the Biology
+                    topics page and select a topic.
+                </p>
+
+            `;
+
+            return;
+
+        }
+
+
+        /* Get topic data */
+
+        const lesson =
+            biologyData[selectedTopic];
+
+
+        /* Display title */
+
+        titleElement.textContent =
+            lesson.title;
+
+
+        /* Display level */
+
+        levelElement.textContent =
+            lesson.level +
+            " • " +
+            lesson.theme;
+
+
+        /* Display content */
+
+        contentElement.innerHTML =
+            lesson.content;
+
+
+        /* Update browser title */
+
+        document.title =
+            lesson.title +
+            " | Biology";
+
+
+    }
+
+);
+
+</script>
+
+
+</body>
+
+</html>

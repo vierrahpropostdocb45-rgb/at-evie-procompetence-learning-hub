@@ -1,0 +1,364 @@
+/* =========================================
+   AT'EVIE PROCOMPETENCE LEARNING HUB
+   CHEMISTRY DESIGN
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.chemistry-header {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #082567, #1261a0, #19a974);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.chemistry-header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.chemistry-header p {
+    margin: 7px 0;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.chemistry-container {
+    width: 94%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.chemistry-intro {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.chemistry-intro h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+
+/* =========================================
+   SENIOR SECTIONS
+   ========================================= */
+
+.senior-section {
+    background: white;
+    margin: 25px 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.09);
+}
+
+.senior-title {
+    padding: 18px 20px;
+    font-size: 23px;
+    font-weight: bold;
+    background: #eaf2ff;
+    border-bottom: 2px solid #d6e5ff;
+}
+
+
+/* =========================================
+   THEMES
+   ========================================= */
+
+.theme-title {
+    margin: 20px 20px 12px;
+    padding: 12px 15px;
+    border-left: 5px solid #1261a0;
+    background: #f1f6fc;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   TOPIC GRID
+   ========================================= */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 5px 20px 20px;
+}
+
+
+.topic {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-height: 75px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.topic:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,0.12);
+
+    border-color: #1261a0;
+}
+
+
+.topic span {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1261a0;
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.topic p {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+.topic a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    background: #1261a0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,0.15);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 40px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    background: #082567;
+
+    color: white;
+}
+
+
+/* =========================================
+   MOBILE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .chemistry-header h1 {
+        font-size: 28px;
+    }
+
+    .chemistry-intro h2 {
+        font-size: 23px;
+    }
+
+    .senior-title {
+        font-size: 20px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .theme-title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
+
+/* SENIOR FOUR */
+.senior-section:nth-of-type(5) .senior-title {
+    background: #ffebee;
+    border-bottom: 3px solid #e53935;
+}
+
+.senior-section:nth-of-type(5) .senior-title span {
+    color: #c62828;
+}
+
+
+/* =========================================
+   COLOUR THE TOPIC NUMBERS
+   ========================================= */
+
+.senior-section:nth-of-type(2) .topic span {
+    background: #43a047;
+}
+
+.senior-section:nth-of-type(3) .topic span {
+    background: #1e88e5;
+}
+
+.senior-section:nth-of-type(4) .topic span {
+    background: #fb8c00;
+}
+
+.senior-section:nth-of-type(5) .topic span {
+    background: #e53935;
+}
+/* =========================================
+   SENIOR LEVEL COLOUR IDENTITY
+   AT'EVIE PROCOMPETENCE CHEMISTRY
+   ========================================= */
+
+.senior-one .senior-title {
+    background: #e8f5e9;
+    border-bottom: 3px solid #43a047;
+}
+
+.senior-one .senior-title span {
+    color: #2e7d32;
+}
+
+.senior-one .topic span {
+    background: #43a047;
+}
+
+
+/* SENIOR TWO */
+
+.senior-two .senior-title {
+    background: #e3f2fd;
+    border-bottom: 3px solid #1e88e5;
+}
+
+.senior-two .senior-title span {
+    color: #1565c0;
+}
+
+.senior-two .topic span {
+    background: #1e88e5;
+}
+
+
+/* SENIOR THREE */
+
+.senior-three .senior-title {
+    background: #fff3e0;
+    border-bottom: 3px solid #fb8c00;
+}
+
+.senior-three .senior-title span {
+    color: #ef6c00;
+}
+
+.senior-three .topic span {
+    background: #fb8c00;
+}
+
+
+/* SENIOR FOUR */
+
+.senior-four .senior-title {
+    background: #ffebee;
+    border-bottom: 3px solid #e53935;
+}
+
+.senior-four .senior-title span {
+    color: #c62828;
+}
+
+.senior-four .topic span {
+    background: #e53935;
+}

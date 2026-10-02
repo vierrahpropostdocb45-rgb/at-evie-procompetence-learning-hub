@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biology | AT'EVIE PROCOMPETENCE LEARNING HUB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef7ee;
+            color: #173b20;
+        }
+
+        .biology-header {
+            background: linear-gradient(135deg, #176b35, #2e9d55);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .biology-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .biology-header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .level-title {
+            background: #176b35;
+            color: white;
+            padding: 14px;
+            border-radius: 10px;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        .theme {
+            background: white;
+            margin-top: 18px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+        }
+
+        .theme h3 {
+            margin-top: 0;
+            color: #176b35;
+            border-bottom: 2px solid #d7ead9;
+            padding-bottom: 8px;
+        }
+
+        .topic {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+
+            background: #f5fbf5;
+            border: 1px solid #cfe5d2;
+            color: #173b20;
+
+            padding: 14px;
+            margin: 9px 0;
+
+            border-radius: 9px;
+
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .topic:hover {
+            background: #dff2e2;
+            transform: translateX(3px);
+        }
+
+        .topic:active {
+            transform: scale(0.98);
+        }
+
+        .number {
+            color: #176b35;
+            margin-right: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: #55705b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="biology-header">
+
+    <h1>🧬 Biology</h1>
+
+    <p>
+        Uganda Lower Secondary Curriculum
+    </p>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</header>
+
+
+<div class="container">
+
+
+    <!-- ========================= -->
+    <!-- SENIOR ONE -->
+    <!-- ========================= -->
+
+    <h2 class="level-title">
+        📘 SENIOR ONE (S1)
+    </h2>
+
+    <div class="theme">
+
+        <h3>🌍 Theme: Diversity of Living Things</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Introduction to Biology')">
+            <span class="number">1.</span>
+            Introduction to Biology
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Cells')">
+            <span class="number">2.</span>
+            Cells
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Classification')">
+            <span class="number">3.</span>
+            Classification
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Five Kingdoms of Living Organisms')">
+            <span class="number">4.</span>
+            Five Kingdoms of Living Organisms
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Viruses')">
+            <span class="number">5.</span>
+            Viruses
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Insects')">
+            <span class="number">6.</span>
+            Insects
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Flowering Plants')">
+            <span class="number">7.</span>
+            Flowering Plants
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- SENIOR TWO -->
+    <!-- ========================= -->
+
+    <h2 class="level-title">
+        📗 SENIOR TWO (S2)
+    </h2>
+
+    <div class="theme">
+
+        <h3>🌱 Theme: Soil</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Physical and Chemical Properties of Soil')">
+            <span class="number">8.</span>
+            Physical and Chemical Properties of Soil
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Soil Erosion and Conservation')">
+            <span class="number">9.</span>
+            Soil Erosion and Conservation: Causes, Effects and Prevention
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🍎 Theme: Nutrition in Plants and Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Nutrition Types and Nutrient Compounds')">
+            <span class="number">10.</span>
+            Nutrition Types and Nutrient Compounds
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Nutrition in Green Plants')">
+            <span class="number">11.</span>
+            Nutrition in Green Plants
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Nutrition in Mammals')">
+            <span class="number">12.</span>
+            Nutrition in Mammals
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🚚 Theme: Transport in Plants and Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Transport in Plants')">
+            <span class="number">13.</span>
+            Transport in Plants
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Transport in Animals')">
+            <span class="number">14.</span>
+            Transport in Animals
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- SENIOR THREE -->
+    <!-- ========================= -->
+
+    <h2 class="level-title">
+        📙 SENIOR THREE (S3)
+    </h2>
+
+
+    <div class="theme">
+
+        <h3>🫁 Theme: Respiration in Plants and Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Gaseous Exchange')">
+            <span class="number">15.</span>
+            Gaseous Exchange
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Aerobic and Anaerobic Respiration')">
+            <span class="number">16.</span>
+            Aerobic Respiration and Anaerobic Respiration
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>💧 Theme: Excretion</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Excretion in Animals')">
+            <span class="number">17.</span>
+            Excretion in Animals
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🧠 Theme: Co-ordination in Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Chemical Coordination in Humans')">
+            <span class="number">18.</span>
+            Chemical Coordination in Humans
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Nervous Coordination in Humans')">
+            <span class="number">19.</span>
+            Nervous Coordination in Humans
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Receptor Organs in Man')">
+            <span class="number">20.</span>
+            Receptor Organs in Man
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🦴 Theme: Locomotion in Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Locomotion in Mammals')">
+            <span class="number">21.</span>
+            Locomotion in Mammals
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🌱 Theme: Growth and Development in Plants and Animals</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Growth in Plants and Animals')">
+            <span class="number">22.</span>
+            Growth in Plants and Animals
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Development in Plants and Animals')">
+            <span class="number">23.</span>
+            Development in Plants and Animals
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- SENIOR FOUR -->
+    <!-- ========================= -->
+
+    <h2 class="level-title">
+        📕 SENIOR FOUR (S4)
+    </h2>
+
+
+    <div class="theme">
+
+        <h3>🌺 Theme: Reproduction in Organisms</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Asexual Reproduction in Plants')">
+            <span class="number">24.</span>
+            Asexual Reproduction in Plants (Vegetative Reproduction)
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Sexual Reproduction in Plants')">
+            <span class="number">25.</span>
+            Sexual Reproduction in Plants
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Sexual Reproduction in Humans')">
+            <span class="number">26.</span>
+            Sexual Reproduction in Humans
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🧬 Theme: Genetics</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Inheritance')">
+            <span class="number">27.</span>
+            Inheritance
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Variation and Selection')">
+            <span class="number">28.</span>
+            Variation and Selection
+        </button>
+
+    </div>
+
+
+    <div class="theme">
+
+        <h3>🌍 Theme: Inter-Relationships</h3>
+
+        <button class="topic" onclick="openBiologyTopic('Concept of Ecology')">
+            <span class="number">29.</span>
+            Concept of Ecology
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Food Chains and Food Webs')">
+            <span class="number">30.</span>
+            Food Chains and Food Webs
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Associations in Biological Communities')">
+            <span class="number">31.</span>
+            Associations in Biological Communities
+        </button>
+
+        <button class="topic" onclick="openBiologyTopic('Humans and the Natural Environment')">
+            <span class="number">32.</span>
+            Humans and the Natural Environment
+        </button>
+
+    </div>
+
+
+</div>
+
+
+<div class="footer">
+
+    <p>
+        🇺🇬 Biology | Uganda Lower Secondary Curriculum
+    </p>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</div>
+
+
+
+<script>
+
+function openBiologyTopic(topic) {
+
+    localStorage.setItem(
+        "selectedBiologyTopic",
+        topic
+    );
+
+    window.location.href = "biology-topic.html";
+
+}
+
+</script>
+
+
+</body>
+</html>

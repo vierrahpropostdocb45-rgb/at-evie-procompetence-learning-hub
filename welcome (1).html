@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background:
+                linear-gradient(135deg, #071952, #088395, #35a29f);
+
+            color: white;
+            text-align: center;
+            padding: 25px 15px 35px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .logo {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+
+            background: white;
+            border-radius: 50%;
+
+            padding: 8px;
+
+            display: block;
+            margin: 0 auto 15px;
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            background: #06142e;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            padding: 10px;
+            gap: 8px;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+
+            padding: 8px 13px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #35a29f;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            max-width: 1100px;
+            margin: 25px auto;
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            background: white;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.10);
+        }
+
+        .hero h2 {
+            color: #071952;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hero-button {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 12px 25px;
+
+            background: #088395;
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .hero-button:hover {
+            background: #071952;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            max-width: 1100px;
+            margin: 25px auto;
+
+            padding: 30px 20px;
+
+            background: white;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            text-align: center;
+
+            color: #071952;
+
+            margin-bottom: 20px;
+
+            font-size: 25px;
+        }
+
+        section h3 {
+            color: #088395;
+            margin: 15px 0 8px;
+        }
+
+        /* =========================
+           ABOUT ME
+        ========================= */
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            flex-wrap: wrap;
+        }
+
+        .profile-picture {
+            width: 230px;
+            height: 280px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            display: block;
+
+            margin: auto;
+
+            box-shadow:
+                0 6px 18px rgba(0,0,0,0.20);
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .highlight {
+            background: #e7f8f8;
+
+            border-left: 5px solid #088395;
+
+            padding: 15px;
+
+            margin: 15px 0;
+
+            border-radius: 8px;
+        }
+
+        /* =========================
+           AIM CARDS
+        ========================= */
+
+        .card-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 18px;
+        }
+
+        .card {
+            background: #f7fafc;
+
+            padding: 20px;
+
+            border-radius: 14px;
+
+            border-top: 5px solid #088395;
+
+            box-shadow:
+                0 3px 10px rgba(0,0,0,0.07);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* =========================
+           SUBJECTS
+        ========================= */
+
+        .subjects-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+
+            gap: 15px;
+        }
+
+        .subject {
+            text-decoration: none;
+
+            background:
+                linear-gradient(135deg, #071952, #088395);
+
+            color: white;
+
+            padding: 18px 12px;
+
+            border-radius: 14px;
+
+            text-align: center;
+
+            font-weight: bold;
+
+            min-height: 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: 0.3s;
+        }
+
+        .subject:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 7px 15px rgba(0,0,0,0.20);
+        }
+
+        /* =========================
+           DEVELOPMENT
+        ========================= */
+
+        .development-list {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 15px;
+
+            list-style: none;
+        }
+
+        .development-list li {
+            background: #eef6ff;
+
+            padding: 15px;
+
+            border-radius: 12px;
+
+            border-left: 5px solid #071952;
+        }
+
+        /* =========================
+           ACADEMIC ADVICE
+        ========================= */
+
+        .advice {
+            background:
+                linear-gradient(135deg, #071952, #088395);
+
+            color: white;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            padding: 30px 20px;
+        }
+
+        .advice h2 {
+            color: white;
+        }
+
+        .advice strong {
+            font-size: 20px;
+        }
+
+        .synopsis {
+            margin-top: 15px;
+
+            max-width: 800px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           PERSONAL MESSAGE
+        ========================= */
+
+        .message {
+            text-align: center;
+
+            font-size: 17px;
+
+            background: #fff8e7;
+
+            border-left: 6px solid #f0a500;
+
+            padding: 25px;
+
+            border-radius: 12px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #06142e;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 15px;
+
+            margin-top: 35px;
+        }
+
+        footer h2 {
+            color: #35a29f;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin: 5px;
+        }
+
+        .footer-motto {
+            margin-top: 15px;
+
+            font-weight: bold;
+
+            color: #35a29f;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            header h2 {
+                font-size: 15px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            section {
+                margin: 15px 10px;
+                padding: 22px 15px;
+            }
+
+            .profile-picture {
+                width: 190px;
+                height: 230px;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 7px 9px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <!-- Make sure your logo file is named logo.png -->
+    <img src="logo.png"
+         alt="AT'EVIE Procompetence Learning Hub Logo"
+         class="logo">
+
+    <h1>
+        AT'EVIE PROCOMPETENCE
+        LEARNING HUB
+    </h1>
+
+    <h2>
+        Learn • Explore • Create • Excel
+    </h2>
+
+    <p>
+        A learner-centred platform for academic growth,
+        creativity, curiosity and innovation.
+    </p>
+
+</header>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About Me</a>
+
+    <a href="#aims">Aims</a>
+
+    <a href="#subjects">Subjects</a>
+
+    <a href="#development">Development</a>
+
+    <a href="#advice">Academic Advice</a>
+
+</nav>
+
+
+<!-- =========================
+     HOME / HERO
+========================= -->
+
+<div class="hero" id="home">
+
+    <h2>
+        Welcome to AT'EVIE Procompetence Learning Hub
+    </h2>
+
+    <p>
+        This is an educational space designed to make
+        learning more accessible, organized, engaging
+        and practical.
+    </p>
+
+    <br>
+
+    <p>
+        The platform brings together academic subjects,
+        learning resources, explanations, revision
+        materials, interactive tools and opportunities
+        for learners to develop knowledge beyond the
+        traditional classroom.
+    </p>
+
+    <a href="#subjects"
+       class="hero-button">
+        EXPLORE SUBJECTS
+    </a>
+
+</div>
+
+
+<!-- =========================
+     ABOUT ME
+========================= -->
+
+<section id="about">
+
+    <h2>ABOUT ME</h2>
+
+    <div class="about-container">
+
+        <!-- Replace profile.png with the exact name
+             of your picture if necessary -->
+
+        <img src="website-hero.png"
+             alt="Founder and creator"
+             class="profile-picture">
+
+
+        <div class="about-text">
+
+            <h3>
+                The Person Behind the Learning Hub
+            </h3>
+         NAME~~:VIERRAH ATUKWATSE ▪︎
+            <p>
+                I am a male, a keen student researcher
+                and creator with a strong interest in
+                learning, discovery and innovation
+            </p>
+
+            <p>
+                I believe that education should not only
+                provide information, but should also
+                encourage a learner to ask questions,
+                investigate ideas, create solutions and
+                develop confidence in applying knowledge.
+            </p>
+
+            <div class="highlight">
+
+                <strong>
+                    My personal interests include:
+                </strong>
+
+                <br>
+
+                Curiosity • Adventure • Research •
+                Creativity • Innovation • Learning
+
+            </div>
+
+            <p>
+                I am also considerate and wishful towards
+                my fellow learners. One of my intentions
+                in creating this platform is to share
+                useful knowledge and create an environment
+                where other learners can grow alongside me.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WEBSITE OVERVIEW
+========================= -->
+
+<section>
+
+    <h2>
+        ABOUT THE WEBSITE
+    </h2>
+
+    <p>
+        AT'EVIE Procompetence Learning Hub is designed
+        as a broad academic and creative learning
+        platform.
+    </p>
+
+    <br>
+
+    <p>
+        It aims to bring different areas of learning
+        together in one organized environment so that
+        learners can study, revise, explore concepts,
+        develop practical understanding and discover
+        new interests.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     AIMS AND TARGETS
+========================= -->
+
+<section id="aims">
+
+    <h2>
+        TARGETS & AIMS OF THE WEBSITE
+    </h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+
+            <h3>Knowledge</h3>
+
+            <p>
+                To provide clear and organized academic
+                information that supports classroom
+                learning and independent study.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Research</h3>
+
+            <p>
+                To encourage learners to investigate
+                questions, seek evidence and develop
+                research-minded thinking.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Creativity</h3>
+
+            <p>
+                To encourage learners to think beyond
+                memorization and develop creative ideas
+                and solutions.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Innovation</h3>
+
+            <p>
+                To inspire learners to use knowledge
+                to create useful things and solve
+                real-life problems.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Confidence</h3>
+
+            <p>
+                To help learners become more confident
+                in understanding, explaining and
+                applying what they learn.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Independent Learning</h3>
+
+            <p>
+                To encourage learners to take greater
+                responsibility for their own academic
+                development.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SUBJECTS
+========================= -->
+
+<section id="subjects">
+
+    <h2>
+        15 SUBJECTS OFFERED
+    </h2>
+
+    <p style="text-align:center; margin-bottom:20px;">
+
+        Explore different areas of academic knowledge
+        and personal development.
+
+    </p>
+
+
+    <div class="subjects-grid">
+
+        <a href="biology.html"
+           class="subject">
+            Biology
+        </a>
+
+        <a href="chemistry.html"
+           class="subject">
+            Chemistry
+        </a>
+
+        <a href="physics.html"
+           class="subject">
+            Physics
+        </a>
+
+        
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW THE WEBSITE HELPS
+========================= -->
+
+<section id="development">
+
+    <h2>
+        HOW THIS SERVICE CONTRIBUTES TO YOUR DEVELOPMENT
+    </h2>
+
+    <ul class="development-list">
+
+        <li>
+            <strong>Academic Growth</strong><br>
+            Strengthen understanding of important
+            concepts across different subjects.
+        </li>
+
+        <li>
+            <strong>Critical Thinking</strong><br>
+            Learn to question, analyse and evaluate
+            information.
+        </li>
+
+        <li>
+            <strong>Research Skills</strong><br>
+            Develop the habit of investigating
+            questions rather than simply accepting
+            information.
+        </li>
+
+        <li>
+            <strong>Problem Solving</strong><br>
+            Apply knowledge to situations and
+            challenges beyond the classroom.
+        </li>
+
+        <li>
+            <strong>Creativity</strong><br>
+            Develop original ideas and approaches
+            to problems.
+        </li>
+
+        <li>
+            <strong>Digital Skills</strong><br>
+            Become more comfortable learning and
+            creating with technology.
+        </li>
+
+        <li>
+            <strong>Communication</strong><br>
+            Improve the ability to explain ideas
+            clearly and confidently.
+        </li>
+
+        <li>
+            <strong>Self-Directed Learning</strong><br>
+            Build the discipline to explore topics
+            independently.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================
+     LEARNING PHILOSOPHY
+========================= -->
+
+<section>
+
+    <h2>
+        OUR LEARNING PHILOSOPHY
+    </h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Learn</h3>
+            <p>
+                Understand the fundamental knowledge
+                and principles.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Explore</h3>
+            <p>
+                Ask questions and investigate ideas
+                beyond the obvious.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Experiment</h3>
+            <p>
+                Put knowledge into practice whenever
+                possible.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Create</h3>
+            <p>
+                Use knowledge to produce ideas,
+                projects and solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Share</h3>
+            <p>
+                Use what you learn to support and
+                inspire others.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Excel</h3>
+            <p>
+                Continue improving through practice,
+                reflection and perseverance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PERSONAL MESSAGE
+========================= -->
+
+<section>
+
+    <div class="message">
+
+        <h2>
+            A MESSAGE TO FELLOW LEARNERS
+        </h2>
+
+        <p>
+            You do not have to know everything today.
+            What matters is your willingness to learn,
+            ask questions and keep improving.
+        </p>
+
+        <br>
+
+        <p>
+            Be curious. Investigate. Make mistakes.
+            Learn from them. Create something useful.
+            Then help someone else understand what
+            you have discovered.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMIC ADVICE
+========================= -->
+
+<section id="advice">
+
+    <div class="advice">
+
+        <h2>
+            ACADEMIC ADVICE
+        </h2>
+
+        <p>
+            <strong>
+                "Do not study only to remember.
+                Study to understand."
+            </strong>
+        </p>
+
+        <p class="synopsis">
+
+            When you understand why something happens,
+            you are more capable of explaining it,
+            applying it to new situations and remembering
+            it for longer. Make understanding your goal,
+            then use revision, practice and questions
+            to strengthen what you have learned.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FUTURE VISION
+========================= -->
+
+<section>
+
+    <h2>
+        THE VISION
+    </h2>
+
+    <p style="text-align:center;">
+
+        AT'EVIE Procompetence Learning Hub is intended
+        to grow into more than a collection of notes.
+        It is a developing learning environment where
+        academic knowledge, technology, research,
+        creativity and innovation can meet.
+
+    </p>
+
+    <br>
+
+    <p style="text-align:center;">
+
+        The journey begins with learning — but it does
+        not have to end there.
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <h2>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </h2>
+
+    <p>
+        Learn • Explore • Create • Excel
+    </p>
+
+    <p>
+        © 2026 AT'EVIE Procompetence Learning Hub
+    </p>
+
+    <p>
+        Educational platform for learning,
+        research, creativity and personal development.
+    </p>
+
+    <p class="footer-motto">
+        Curiosity • Knowledge • Innovation • Service
+    </p>
+
+</footer>
+
+
+</body>
+</html>

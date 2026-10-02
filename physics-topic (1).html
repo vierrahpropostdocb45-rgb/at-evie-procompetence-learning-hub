@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Physics Lesson | AT'EVIE PROCOMPETENCE LEARNING HUB</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+.header {
+    background: linear-gradient(135deg, #071952, #088395);
+    color: white;
+    padding: 28px 15px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 8px 0 0;
+}
+
+.lesson-container {
+    max-width: 1050px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+#lessonTitle {
+    color: #071952;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#lessonLevel {
+    text-align: center;
+    color: #088395;
+    font-weight: bold;
+}
+
+#lessonTheme {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#lessonContent {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#lessonContent h2 {
+    color: #088395;
+    border-bottom: 2px solid #088395;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+#lessonContent h3 {
+    color: #071952;
+    margin-top: 25px;
+}
+
+#lessonContent p {
+    line-height: 1.8;
+}
+
+#lessonContent li {
+    margin: 8px 0;
+}
+
+#lessonContent table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#lessonContent th,
+#lessonContent td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#lessonContent th {
+    background: #071952;
+    color: white;
+}
+
+.error-box {
+    background: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.success-box {
+    background: #e8f7ef;
+    border-left: 5px solid #198754;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.back-button button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #071952;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button button:hover {
+    background: #088395;
+}
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .lesson-card {
+        padding: 16px;
+    }
+
+    #lessonContent {
+        font-size: 15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+    <h1>📘 AT'EVIE PROCOMPETENCE LEARNING HUB</h1>
+
+    <p>Physics Learning Area</p>
+
+</div>
+
+
+<div class="lesson-container">
+
+<div class="lesson-card">
+
+
+<h1 id="lessonTitle">
+    Loading Physics Topic...
+</h1>
+
+
+<div id="lessonLevel"></div>
+
+<div id="lessonTheme"></div>
+
+
+<div id="lessonContent">
+
+    <p style="text-align:center;">
+        Loading lesson content...
+    </p>
+
+</div>
+
+
+<a href="physics.html"
+   class="back-button">
+
+    <button>
+        ← Back to Physics Topics
+    </button>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     PHYSICS DATA
+     ========================================================= -->
+
+<script src="physics-data.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    console.log("=================================");
+    console.log("PHYSICS LESSON SYSTEM STARTED");
+    console.log("=================================");
+
+
+    /*
+    ---------------------------------------------------------
+    CHECK PHYSICS DATA
+    ---------------------------------------------------------
+    */
+
+    if (typeof physicsData === "undefined") {
+
+        document.getElementById("lessonTitle").textContent =
+            "Physics Data Error";
+
+        document.getElementById("lessonContent").innerHTML = `
+
+            <div class="error-box">
+
+                <h3>⚠️ physics-data.js was not loaded</h3>
+
+                <p>
+                    The lesson page cannot find
+                    <strong>physicsData</strong>.
+                </p>
+
+                <p>
+                    Make sure <strong>physics-data.js</strong>
+                    is in the same folder as this page.
+                </p>
+
+            </div>
+
+        `;
+
+        console.error(
+            "ERROR: physicsData is undefined."
+        );
+
+        return;
+    }
+
+
+    /*
+    ---------------------------------------------------------
+    DISPLAY ALL AVAILABLE TOPICS IN CONSOLE
+    ---------------------------------------------------------
+    */
+
+    const availableTopics =
+        Object.keys(physicsData);
+
+    console.log(
+        "Number of Physics topics:",
+        availableTopics.length
+    );
+
+    console.log(
+        "Available Physics topics:",
+        availableTopics
+    );
+
+
+    /*
+    ---------------------------------------------------------
+    GET SELECTED TOPIC
+    ---------------------------------------------------------
+    */
+
+    let selectedTopic =
+        localStorage.getItem("selectedPhysicsTopic");
+
+
+    console.log(
+        "Selected topic:",
+        selectedTopic
+    );
+
+
+    /*
+    ---------------------------------------------------------
+    NO TOPIC SELECTED
+    ---------------------------------------------------------
+    */
+
+    if (!selectedTopic) {
+
+        document.getElementById("lessonTitle").textContent =
+            "No Physics Topic Selected";
+
+        document.getElementById("lessonContent").innerHTML = `
+
+            <div class="error-box">
+
+                <h3>⚠️ No topic selected</h3>
+
+                <p>
+                    Please return to the Physics topics page
+                    and select a topic.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    /*
+    =========================================================
+    NORMALISE TOPIC NAMES
+    =========================================================
+
+    This removes differences caused by:
+
+    - capital letters
+    - extra spaces
+    - commas
+    - semicolons
+    - colons
+    - hyphens
+    - ampersands
+    - apostrophes
+    =========================================================
+    */
+
+    function normalizeTopicName(name) {
+
+        return String(name)
+            .toLowerCase()
+            .replace(/&/g, "and")
+            .replace(/[’']/g, "")
+            .replace(/[,:;.!?()[\]{}\-]/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
+
+    }
+
+
+    /*
+    ---------------------------------------------------------
+    FIRST TRY: EXACT MATCH
+    ---------------------------------------------------------
+    */
+
+    let topic =
+        physicsData[selectedTopic];
+
+
+    /*
+    ---------------------------------------------------------
+    SECOND TRY: NORMALISED MATCH
+    ---------------------------------------------------------
+    */
+
+    if (!topic) {
+
+        const normalizedSelected =
+            normalizeTopicName(selectedTopic);
+
+
+        const matchingKey =
+            availableTopics.find(function (key) {
+
+                return normalizeTopicName(key)
+                    === normalizedSelected;
+
+            });
+
+
+        if (matchingKey) {
+
+            console.log(
+                "Normalised match found:",
+                matchingKey
+            );
+
+            topic =
+                physicsData[matchingKey];
+
+        }
+
+    }
+
+
+    /*
+    ---------------------------------------------------------
+    THIRD TRY: SEARCH BY WORDS
+    ---------------------------------------------------------
+    */
+
+    if (!topic) {
+
+        const selectedWords =
+            normalizeTopicName(selectedTopic)
+            .split(" ")
+            .filter(word => word.length > 2);
+
+
+        const possibleKey =
+            availableTopics.find(function (key) {
+
+                const normalizedKey =
+                    normalizeTopicName(key);
+
+                return selectedWords.every(function (word) {
+
+                    return normalizedKey.includes(word);
+
+                });
+
+            });
+
+
+        if (possibleKey) {
+
+            console.log(
+                "Flexible topic match found:",
+                possibleKey
+            );
+
+            topic =
+                physicsData[possibleKey];
+
+        }
+
+    }
+
+
+    /*
+    =========================================================
+    TOPIC STILL NOT FOUND
+    =========================================================
+    */
+
+    if (!topic) {
+
+        document.getElementById("lessonTitle").textContent =
+            "Topic Not Found";
+
+
+        document.getElementById("lessonContent").innerHTML = `
+
+            <div class="error-box">
+
+                <h3>⚠️ Physics topic not found</h3>
+
+                <p>
+                    The selected topic is:
+                </p>
+
+                <p>
+                    <strong>${selectedTopic}</strong>
+                </p>
+
+                <hr>
+
+                <p>
+                    The Physics data file currently contains:
+                </p>
+
+                <ul>
+                    ${
+                        availableTopics
+                        .map(topicName =>
+                            `<li>${topicName}</li>`
+                        )
+                        .join("")
+                    }
+                </ul>
+
+                <p>
+                    If the topic should be there,
+                    the problem is most likely in
+                    <strong>physics-data.js</strong>.
+                </p>
+
+            </div>
+
+        `;
+
+
+        console.error(
+            "PHYSICS TOPIC NOT FOUND:",
+            selectedTopic
+        );
+
+        return;
+    }
+
+
+    /*
+    =========================================================
+    DISPLAY LESSON
+    =========================================================
+    */
+
+    document.getElementById("lessonTitle")
+        .textContent =
+        topic.title || selectedTopic;
+
+
+    document.getElementById("lessonLevel")
+        .textContent =
+        topic.level || "";
+
+
+    document.getElementById("lessonTheme")
+        .textContent =
+        topic.theme || "";
+
+
+    if (topic.content) {
+
+        document.getElementById("lessonContent")
+            .innerHTML =
+            topic.content;
+
+    } else {
+
+        document.getElementById("lessonContent")
+            .innerHTML = `
+
+            <div class="error-box">
+
+                <h3>⚠️ Lesson content missing</h3>
+
+                <p>
+                    The topic exists in physics-data.js,
+                    but no content was provided for it.
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
+
+    /*
+    =========================================================
+    SUCCESS
+    =========================================================
+    */
+
+    console.log(
+        "✅ Physics lesson displayed:",
+        topic.title
+    );
+
+});
+
+</script>
+
+
+</body>
+
+</html>

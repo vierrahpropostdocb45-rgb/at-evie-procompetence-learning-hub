@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Physics | AT'EVIE PROCOMPETENCE LEARNING HUB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef5fb;
+            color: #172f45;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .physics-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #123c63,
+                    #2379b5
+                );
+
+            color: white;
+            text-align: center;
+
+            padding: 30px 15px;
+
+            box-shadow:
+                0 4px 10px
+                rgba(0,0,0,0.2);
+        }
+
+        .physics-header h1 {
+
+            margin: 0;
+
+            font-size: 32px;
+
+        }
+
+        .physics-header p {
+
+            margin-top: 9px;
+
+            font-size: 16px;
+
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .container {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 20px;
+
+        }
+
+
+        /* =========================
+           SENIOR HEADINGS
+        ========================= */
+
+        .level-title {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #123c63,
+                    #2379b5
+                );
+
+            color: white;
+
+            padding: 15px;
+
+            border-radius: 11px;
+
+            margin-top: 28px;
+
+            text-align: center;
+
+            font-size: 23px;
+
+            box-shadow:
+                0 3px 7px
+                rgba(0,0,0,0.15);
+
+        }
+
+
+        /* =========================
+           THEMES
+        ========================= */
+
+        .theme {
+
+            background: white;
+
+            margin-top: 18px;
+
+            padding: 17px;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 3px 9px
+                rgba(0,0,0,0.10);
+
+        }
+
+        .theme h3 {
+
+            margin-top: 0;
+
+            color: #123c63;
+
+            border-bottom:
+                2px solid #d5e6f3;
+
+            padding-bottom: 9px;
+
+        }
+
+
+        /* =========================
+           TOPIC BUTTONS
+        ========================= */
+
+        .topic {
+
+            display: block;
+
+            width: 100%;
+
+            box-sizing: border-box;
+
+            background: #f5faff;
+
+            border:
+                1px solid #c8deed;
+
+            color: #172f45;
+
+            padding: 14px;
+
+            margin: 9px 0;
+
+            border-radius: 9px;
+
+            text-align: left;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+        }
+
+        .topic:hover {
+
+            background: #e1f0fa;
+
+            transform:
+                translateX(3px);
+
+        }
+
+        .topic:active {
+
+            transform:
+                scale(0.98);
+
+        }
+
+
+        /* =========================
+           NUMBER
+        ========================= */
+
+        .number {
+
+            color: #2379b5;
+
+            margin-right: 7px;
+
+        }
+
+
+        /* =========================
+           PERIODS
+        ========================= */
+
+        .periods {
+
+            float: right;
+
+            font-size: 13px;
+
+            font-weight: normal;
+
+            color: #55748b;
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 28px 10px;
+
+            color: #55748b;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                padding: 12px;
+
+            }
+
+            .physics-header h1 {
+
+                font-size: 27px;
+
+            }
+
+            .topic {
+
+                font-size: 15px;
+
+                padding: 13px;
+
+            }
+
+            .periods {
+
+                display: block;
+
+                float: none;
+
+                margin-top: 5px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="physics-header">
+
+    <h1>⚛️ Physics</h1>
+
+    <p>
+        Uganda Lower Secondary Curriculum
+    </p>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</header>
+
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     SENIOR ONE
+===================================================== -->
+
+<h2 class="level-title">
+    📘 SENIOR ONE (S1)
+</h2>
+
+
+<!-- INTRODUCTION -->
+
+<div class="theme">
+
+    <h3>
+        🔬 Theme: Introduction
+    </h3>
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Introduction to Physics')">
+
+        <span class="number">1.</span>
+
+        Introduction to Physics
+
+        <span class="periods">
+            6 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- MECHANICS -->
+
+<div class="theme">
+
+    <h3>
+        ⚙️ Theme: Mechanics and Properties of Matter
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Measurements in Physics')">
+
+        <span class="number">2.</span>
+
+        Measurements in Physics
+
+        <span class="periods">
+            30 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('States of Matter')">
+
+        <span class="number">3.</span>
+
+        States of Matter
+
+        <span class="periods">
+            10 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Effects of Forces')">
+
+        <span class="number">4.</span>
+
+        Effects of Forces
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- HEAT -->
+
+<div class="theme">
+
+    <h3>
+        🌡️ Theme: Heat
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Temperature Measurements')">
+
+        <span class="number">5.</span>
+
+        Temperature Measurements
+
+        <span class="periods">
+            10 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Heat Transfer')">
+
+        <span class="number">6.</span>
+
+        Heat Transfer
+
+        <span class="periods">
+            12 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Expansion of Solids, Liquids, and Gases')">
+
+        <span class="number">7.</span>
+
+        Expansion of Solids, Liquids, and Gases
+
+        <span class="periods">
+            8 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- LIGHT -->
+
+<div class="theme">
+
+    <h3>
+        💡 Theme: Light
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Nature of Light; Reflection of Light at Plane Surfaces')">
+
+        <span class="number">8.</span>
+
+        Nature of Light; Reflection of Light at Plane Surfaces
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     SENIOR TWO
+===================================================== -->
+
+<h2 class="level-title">
+    📗 SENIOR TWO (S2)
+</h2>
+
+
+
+<!-- MECHANICS -->
+
+<div class="theme">
+
+    <h3>
+        ⚙️ Theme: Mechanics and Properties of Matter
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Work, Energy, and Power')">
+
+        <span class="number">9.</span>
+
+        Work, Energy, and Power
+
+        <span class="periods">
+            20 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Turning Effect of Forces, Centre of Gravity, and Stability')">
+
+        <span class="number">10.</span>
+
+        Turning Effect of Forces, Centre of Gravity, and Stability
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Pressure in Solids and Fluids')">
+
+        <span class="number">11.</span>
+
+        Pressure in Solids and Fluids
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Mechanical Properties of Materials and Hooke’s Law')">
+
+        <span class="number">12.</span>
+
+        Mechanical Properties of Materials and Hooke’s Law
+
+        <span class="periods">
+            12 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- LIGHT -->
+
+<div class="theme">
+
+    <h3>
+        💡 Theme: Light
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Reflection of Light at Curved Surfaces')">
+
+        <span class="number">13.</span>
+
+        Reflection of Light at Curved Surfaces
+
+        <span class="periods">
+            8 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- MAGNETISM -->
+
+<div class="theme">
+
+    <h3>
+        🧲 Theme: Magnetism
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Magnets and Magnetic Fields')">
+
+        <span class="number">14.</span>
+
+        Magnets and Magnetic Fields
+
+        <span class="periods">
+            10 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- ELECTRICITY -->
+
+<div class="theme">
+
+    <h3>
+        ⚡ Theme: Electricity
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Electrostatics')">
+
+        <span class="number">15.</span>
+
+        Electrostatics
+
+        <span class="periods">
+            8 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- EARTH AND SPACE -->
+
+<div class="theme">
+
+    <h3>
+        🌍 Theme: Earth and Space Physics
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('The Solar System')">
+
+        <span class="number">16.</span>
+
+        The Solar System
+
+        <span class="periods">
+            18 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     SENIOR THREE
+===================================================== -->
+
+<h2 class="level-title">
+    📙 SENIOR THREE (S3)
+</h2>
+
+
+
+<!-- MECHANICS -->
+
+<div class="theme">
+
+    <h3>
+        ⚙️ Theme: Mechanics and Properties of Matter
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Linear and Non-Linear Motion')">
+
+        <span class="number">17.</span>
+
+        Linear and Non-Linear Motion
+
+        <span class="periods">
+            30 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- LIGHT -->
+
+<div class="theme">
+
+    <h3>
+        💡 Theme: Light
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Refraction, Dispersion, and Colour')">
+
+        <span class="number">18.</span>
+
+        Refraction, Dispersion, and Colour
+
+        <span class="periods">
+            18 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Lenses and Optical Instruments')">
+
+        <span class="number">19.</span>
+
+        Lenses and Optical Instruments
+
+        <span class="periods">
+            18 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- WAVES -->
+
+<div class="theme">
+
+    <h3>
+        🌊 Theme: Waves
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('General Wave Properties')">
+
+        <span class="number">20.</span>
+
+        General Wave Properties
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Sound Waves')">
+
+        <span class="number">21.</span>
+
+        Sound Waves
+
+        <span class="periods">
+            14 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- HEAT -->
+
+<div class="theme">
+
+    <h3>
+        🌡️ Theme: Heat
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Heat Quantities and Vapours')">
+
+        <span class="number">22.</span>
+
+        Heat Quantities and Vapours
+
+        <span class="periods">
+            20 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- EARTH AND SPACE -->
+
+<div class="theme">
+
+    <h3>
+        🌌 Theme: Earth and Space Physics
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Stars and Galaxies')">
+
+        <span class="number">23.</span>
+
+        Stars and Galaxies
+
+        <span class="periods">
+            14 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Satellites and Communication')">
+
+        <span class="number">24.</span>
+
+        Satellites and Communication
+
+        <span class="periods">
+            14 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     SENIOR FOUR
+===================================================== -->
+
+<h2 class="level-title">
+    📕 SENIOR FOUR (S4)
+</h2>
+
+
+
+<!-- ELECTRICITY -->
+
+<div class="theme">
+
+    <h3>
+        ⚡ Theme: Electricity
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Introduction to Current Electricity')">
+
+        <span class="number">25.</span>
+
+        Introduction to Current Electricity
+
+        <span class="periods">
+            14 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Voltage, Resistance and Ohm’s Law')">
+
+        <span class="number">26.</span>
+
+        Voltage, Resistance and Ohm’s Law
+
+        <span class="periods">
+            18 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Electric Energy Distribution and Consumption')">
+
+        <span class="number">27.</span>
+
+        Electric Energy Distribution and Consumption
+
+        <span class="periods">
+            28 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- MAGNETISM -->
+
+<div class="theme">
+
+    <h3>
+        🧲 Theme: Magnetism
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Electromagnetic Effects')">
+
+        <span class="number">28.</span>
+
+        Electromagnetic Effects
+
+        <span class="periods">
+            16 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+<!-- MODERN PHYSICS -->
+
+<div class="theme">
+
+    <h3>
+        ⚛️ Theme: Modern Physics
+    </h3>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Atomic Models')">
+
+        <span class="number">29.</span>
+
+        Atomic Models
+
+        <span class="periods">
+            20 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Nuclear Processes')">
+
+        <span class="number">30.</span>
+
+        Nuclear Processes
+
+        <span class="periods">
+            20 periods
+        </span>
+
+    </button>
+
+
+    <button class="topic"
+        onclick="openPhysicsTopic('Digital Electronics')">
+
+        <span class="number">31.</span>
+
+        Digital Electronics
+
+        <span class="periods">
+            20 periods
+        </span>
+
+    </button>
+
+</div>
+
+
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <p>
+        🇺🇬 Uganda Lower Secondary Physics
+    </p>
+
+    <p>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function openPhysicsTopic(topicName) {
+
+    console.log("Opening Physics topic:", topicName);
+
+    localStorage.setItem(
+        "selectedPhysicsTopic",
+        topicName
+    );
+
+    window.location.href =
+        "physics-topic.html";
+}
+
+</script>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Chemistry | AT'EVIE PROCOMPETENCE LEARNING HUB
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background:
+                linear-gradient(135deg,
+                #071952,
+                #088395,
+                #35a29f);
+
+            color: white;
+            text-align: center;
+
+            padding: 25px 15px 30px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+
+            object-fit: contain;
+
+            background: white;
+
+            padding: 6px;
+
+            border-radius: 50%;
+
+            margin-bottom: 10px;
+
+            box-shadow:
+                0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 17px;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        header p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            background: #06142e;
+
+            padding: 10px;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            padding: 8px 13px;
+
+            border-radius: 20px;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #35a29f;
+        }
+
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            max-width: 1100px;
+
+            margin: 25px auto;
+
+            padding: 30px 20px;
+
+            background: white;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .intro h2 {
+            color: #071952;
+
+            font-size: 27px;
+
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        /* =========================
+           SENIOR SECTIONS
+        ========================= */
+
+        .senior-section {
+
+            max-width: 1100px;
+
+            margin: 25px auto;
+
+            background: white;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        .senior-header {
+
+            color: white;
+
+            padding: 22px;
+
+            background:
+                linear-gradient(135deg,
+                #071952,
+                #088395);
+        }
+
+        .senior-header h2 {
+            font-size: 25px;
+        }
+
+        .senior-header p {
+            margin-top: 4px;
+
+            opacity: 0.9;
+        }
+
+
+        /* =========================
+           TOPIC LIST
+        ========================= */
+
+        .topic-list {
+
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit,
+                minmax(270px, 1fr));
+
+            gap: 15px;
+        }
+
+
+        .topic {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            min-height: 90px;
+
+            padding: 15px;
+
+            background: #f5f9fc;
+
+            border-radius: 13px;
+
+            border-left: 5px solid #088395;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .topic:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 6px 15px rgba(0,0,0,0.12);
+
+            background: #eaf8f8;
+        }
+
+
+        .topic-number {
+
+            min-width: 48px;
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #071952;
+
+            color: white;
+
+            border-radius: 50%;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+
+        .topic-content {
+            flex: 1;
+        }
+
+
+        .topic-content h3 {
+
+            color: #071952;
+
+            font-size: 16px;
+
+            margin-bottom: 4px;
+        }
+
+
+        .topic-content p {
+
+            font-size: 12px;
+
+            color: #5b6472;
+        }
+
+
+        /* =========================
+           THEMES
+        ========================= */
+
+        .theme-label {
+
+            margin: 20px 20px 0;
+
+            padding: 10px 14px;
+
+            background: #e7f4f7;
+
+            border-left: 5px solid #35a29f;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            color: #071952;
+        }
+
+
+        /* =========================
+           TOOLS
+        ========================= */
+
+        .tools {
+
+            max-width: 1100px;
+
+            margin: 25px auto;
+
+            background: white;
+
+            padding: 30px 20px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        .tools h2 {
+
+            text-align: center;
+
+            color: #071952;
+
+            margin-bottom: 20px;
+        }
+
+
+        .tools-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit,
+                minmax(200px, 1fr));
+
+            gap: 15px;
+        }
+
+
+        .tool {
+
+            background:
+                linear-gradient(135deg,
+                #071952,
+                #088395);
+
+            color: white;
+
+            padding: 18px;
+
+            text-align: center;
+
+            border-radius: 12px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .tool:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 6px 15px rgba(0,0,0,0.2);
+        }
+
+
+        /* =========================
+           STUDY ADVICE
+        ========================= */
+
+        .advice {
+
+            max-width: 1100px;
+
+            margin: 25px auto;
+
+            padding: 30px 20px;
+
+            background:
+                linear-gradient(135deg,
+                #071952,
+                #088395);
+
+            color: white;
+
+            text-align: center;
+
+            border-radius: 18px;
+        }
+
+
+        .advice h2 {
+
+            margin-bottom: 12px;
+
+            font-size: 24px;
+        }
+
+
+        .advice strong {
+
+            font-size: 18px;
+        }
+
+
+        .advice p {
+
+            max-width: 800px;
+
+            margin: 10px auto 0;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            background: #06142e;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 15px;
+
+            margin-top: 35px;
+        }
+
+
+        footer h2 {
+
+            color: #35a29f;
+
+            margin-bottom: 8px;
+        }
+
+
+        footer p {
+
+            font-size: 13px;
+
+            margin: 5px;
+        }
+
+
+        .motto {
+
+            color: #35a29f;
+
+            font-weight: bold;
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header h2 {
+                font-size: 14px;
+            }
+
+            .intro h2 {
+                font-size: 23px;
+            }
+
+            .senior-header h2 {
+                font-size: 21px;
+            }
+
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+
+            .topic {
+                min-height: 80px;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 7px 9px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <img src="logo.png"
+         alt="AT'EVIE Procompetence Learning Hub Logo"
+         class="logo">
+
+    <h1>CHEMISTRY</h1>
+
+    <h2>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </h2>
+
+    <p>
+        Uganda Lower Secondary Chemistry • Senior One – Senior Four
+    </p>
+
+</header>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <a href="welcome.html">
+        🏠 Home
+    </a>
+
+    <a href="#senior1">
+        S1
+    </a>
+
+    <a href="#senior2">
+        S2
+    </a>
+
+    <a href="#senior3">
+        S3
+    </a>
+
+    <a href="#senior4">
+        S4
+    </a>
+
+    <a href="#tools">
+        🧪 Tools
+    </a>
+
+</nav>
+
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+<div class="intro">
+
+    <h2>
+        CHEMISTRY LEARNING AREA
+    </h2>
+
+    <p>
+        Welcome to the Chemistry section of
+        AT'EVIE Procompetence Learning Hub.
+    </p>
+
+    <br>
+
+    <p>
+        Explore Uganda Lower Secondary Chemistry
+        from Senior One to Senior Four through
+        organized topics, explanations, practical
+        activities, illustrations, examples,
+        quizzes and examination revision.
+    </p>
+
+    <br>
+
+    <p>
+        <strong>
+            Learn • Explore • Experiment • Create • Excel
+        </strong>
+    </p>
+
+</div>
+
+
+<!-- =====================================================
+     SENIOR ONE
+===================================================== -->
+
+<section class="senior-section"
+         id="senior1">
+
+    <div class="senior-header">
+
+        <h2>
+            🟢 SENIOR ONE
+        </h2>
+
+        <p>
+            Foundation of Chemistry
+        </p>
+
+    </div>
+
+
+    <!-- THEME 1 -->
+
+    <div class="theme-label">
+
+        Theme 1:
+        Introduction to Chemistry and
+        Experimental Techniques
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('1.1 Chemistry and Society')">
+
+            <div class="topic-number">
+                1.1
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Chemistry and Society
+                </h3>
+
+                <p>
+                    Introduction to Chemistry,
+                    its importance and applications
+                    in society.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="topic"
+             onclick="openLesson('1.2 Experimental Chemistry')">
+
+            <div class="topic-number">
+                1.2
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Experimental Chemistry
+                </h3>
+
+                <p>
+                    Laboratory skills, apparatus,
+                    safety and scientific investigation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 2 -->
+
+    <div class="theme-label">
+
+        Theme 2:
+        Particle Nature of Matter
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('2.1 States and Changes of States of Matter')">
+
+            <div class="topic-number">
+                2.1
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    States and Changes of States of Matter
+                </h3>
+
+                <p>
+                    Particles, states of matter and
+                    changes between the states.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="topic"
+             onclick="openLesson('2.2 Using Materials')">
+
+            <div class="topic-number">
+                2.2
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Using Materials
+                </h3>
+
+                <p>
+                    Properties, selection and uses
+                    of materials.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 3 -->
+
+    <div class="theme-label">
+
+        Theme 3:
+        Temporary and Permanent Changes
+        to Materials
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('3.1 Temporary and Permanent Changes')">
+
+            <div class="topic-number">
+                3.1
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Temporary and Permanent Changes
+                </h3>
+
+                <p>
+                    Physical and chemical changes
+                    and their characteristics.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="topic"
+             onclick="openLesson('3.2 Mixtures, Elements and Compounds')">
+
+            <div class="topic-number">
+                3.2
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Mixtures, Elements and Compounds
+                </h3>
+
+                <p>
+                    Classification of matter and
+                    methods of separation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 4 -->
+
+    <div class="theme-label">
+
+        Theme 4:
+        Air and Environment
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('3.3 Air')">
+
+            <div class="topic-number">
+                3.3
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Air
+                </h3>
+
+                <p>
+                    Composition, properties,
+                    uses and environmental importance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="topic"
+             onclick="openLesson('3.4 Water')">
+
+            <div class="topic-number">
+                3.4
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Water
+                </h3>
+
+                <p>
+                    Properties, sources, treatment,
+                    uses and importance of water.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 5 -->
+
+    <div class="theme-label">
+
+        Theme 5:
+        Earth and Space
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('4.1 Rocks and Minerals')">
+
+            <div class="topic-number">
+                4.1
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Rocks and Minerals
+                </h3>
+
+                <p>
+                    Types, properties, formation
+                    and uses of rocks and minerals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SENIOR TWO
+===================================================== -->
+
+<section class="senior-section"
+         id="senior2">
+
+    <div class="senior-header">
+
+        <h2>
+            🔵 SENIOR TWO
+        </h2>
+
+        <p>
+            Developing Chemical Understanding
+        </p>
+
+    </div>
+
+
+    <!-- THEME 6 -->
+
+    <div class="theme-label">
+
+        Theme 6:
+        Acids and Alkalis
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('5.1 Acids and Alkalis')">
+
+            <div class="topic-number">
+                5.1
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Acids and Alkalis
+                </h3>
+
+                <p>
+                    Properties, indicators,
+                    pH and reactions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="topic"
+             onclick="openLesson('5.2 Salts')">
+
+            <div class="topic-number">
+                5.2
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Salts
+                </h3>
+
+                <p>
+                    Properties, preparation,
+                    reactions and uses of salts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 7 -->
+
+    <div class="theme-label">
+
+        Theme 7:
+        The Periodic Table
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('6 The Periodic Table')">
+
+            <div class="topic-number">
+                6
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    The Periodic Table
+                </h3>
+
+                <p>
+                    Classification and arrangement
+                    of elements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 8 -->
+
+    <div class="theme-label">
+
+        Theme 8:
+        Carbon in the Environment
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('7 Carbon in the Environment')">
+
+            <div class="topic-number">
+                7
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Carbon in the Environment
+                </h3>
+
+                <p>
+                    Carbon, carbon dioxide,
+                    fuels and environmental issues.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 9 -->
+
+    <div class="theme-label">
+
+        Theme 9:
+        Order of Reactivity of Metals
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('8 The Reactivity Series')">
+
+            <div class="topic-number">
+                8
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    The Reactivity Series
+                </h3>
+
+                <p>
+                    Reactivity of metals,
+                    displacement and applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SENIOR THREE
+===================================================== -->
+
+<section class="senior-section"
+         id="senior3">
+
+    <div class="senior-header">
+
+        <h2>
+            🟠 SENIOR THREE
+        </h2>
+
+        <p>
+            Advanced Chemical Concepts
+        </p>
+
+    </div>
+
+
+    <!-- THEME 10 -->
+
+    <div class="theme-label">
+
+        Theme 10:
+        Carbon in Life
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('9 Carbon in Life')">
+
+            <div class="topic-number">
+                9
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Carbon in Life
+                </h3>
+
+                <p>
+                    Organic compounds, hydrocarbons,
+                    polymers, alcohols and applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 11 -->
+
+    <div class="theme-label">
+
+        Theme 11:
+        Structures and Bonds
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('10 Structures and Bonds')">
+
+            <div class="topic-number">
+                10
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Structures and Bonds
+                </h3>
+
+                <p>
+                    Atomic structure, electronic
+                    arrangement and chemical bonding.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 12 -->
+
+    <div class="theme-label">
+
+        Theme 12:
+        Using Equations in Chemistry
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('11 Formulae Stoichiometry and Mole Concept')">
+
+            <div class="topic-number">
+                11
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Formulae, Stoichiometry and Mole Concept
+                </h3>
+
+                <p>
+                    Formulae, equations, moles,
+                    masses, particles and calculations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 13 -->
+
+    <div class="theme-label">
+
+        Theme 13:
+        Structures of Substances
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('12 Properties and Structures of Substances')">
+
+            <div class="topic-number">
+                12
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Properties and Structures of Substances
+                </h3>
+
+                <p>
+                    Relationship between structure
+                    and properties of substances.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 14 -->
+
+    <div class="theme-label">
+
+        Theme 14:
+        Fuels and Energy
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('13 Fossil Fuels')">
+
+            <div class="topic-number">
+                13
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Fossil Fuels
+                </h3>
+
+                <p>
+                    Coal, petroleum, natural gas,
+                    uses and environmental effects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 15 -->
+
+    <div class="theme-label">
+
+        Theme 15:
+        Reactants and Products
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('14 Chemical Reactions')">
+
+            <div class="topic-number">
+                14
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Chemical Reactions
+                </h3>
+
+                <p>
+                    Chemical reactions, rates,
+                    factors affecting rates and
+                    reversible reactions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SENIOR FOUR
+===================================================== -->
+
+<section class="senior-section"
+         id="senior4">
+
+    <div class="senior-header">
+
+        <h2>
+            🔴 SENIOR FOUR
+        </h2>
+
+        <p>
+            Applied and Advanced Chemistry
+        </p>
+
+    </div>
+
+
+    <!-- THEME 16 -->
+
+    <div class="theme-label">
+
+        Theme 16:
+        REDOX Reactions
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('15 Oxidation and Reduction Reactions')">
+
+            <div class="topic-number">
+                15
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Oxidation and Reduction Reactions
+                </h3>
+
+                <p>
+                    Oxidation, reduction, electron
+                    transfer, oxidation numbers and
+                    electrolysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 17 -->
+
+    <div class="theme-label">
+
+        Theme 17:
+        Industrial Processes
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('16 Industrial Processes')">
+
+            <div class="topic-number">
+                16
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Industrial Processes
+                </h3>
+
+                <p>
+                    Industrial chemistry,
+                    metals, lime, cement and
+                    related processes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 18 -->
+
+    <div class="theme-label">
+
+        Theme 18:
+        Periodicity
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('17 Trends in the Periodic Table')">
+
+            <div class="topic-number">
+                17
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Trends in the Periodic Table
+                </h3>
+
+                <p>
+                    Periodic trends and properties
+                    of elements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 19 -->
+
+    <div class="theme-label">
+
+        Theme 19:
+        Thermochemistry
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('18 Energy Changes During Chemical Reactions')">
+
+            <div class="topic-number">
+                18
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Energy Changes During Chemical Reactions
+                </h3>
+
+                <p>
+                    Exothermic and endothermic reactions,
+                    fuels and energy profiles.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 20 -->
+
+    <div class="theme-label">
+
+        Theme 20:
+        Consumable Chemicals
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('19 Chemicals for Consumers')">
+
+            <div class="topic-number">
+                19
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Chemicals for Consumers
+                </h3>
+
+                <p>
+                    Soap, detergents, food additives,
+                    medicines and consumer chemicals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- THEME 21 -->
+
+    <div class="theme-label">
+
+        Theme 21:
+        Nuclear Processes
+
+    </div>
+
+
+    <div class="topic-list">
+
+        <div class="topic"
+             onclick="openLesson('20 Nuclear Processes')">
+
+            <div class="topic-number">
+                20
+            </div>
+
+            <div class="topic-content">
+
+                <h3>
+                    Nuclear Processes
+                </h3>
+
+                <p>
+                    Radioactivity, nuclear reactions,
+                    half-life, applications and safety.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CHEMISTRY LEARNING TOOLS
+===================================================== -->
+
+<section class="tools"
+         id="tools">
+
+    <h2>
+        🧪 CHEMISTRY LEARNING TOOLS
+    </h2>
+
+
+    <div class="tools-grid">
+
+        <div class="tool"
+             onclick="openTool('periodic-table.html')">
+
+            ⚛️ Interactive Periodic Table
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('apparatus.html')">
+
+            🧪 Laboratory Apparatus Guide
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('formula-sheet.html')">
+
+            📐 Chemistry Formula Sheet
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('calculator.html')">
+
+            🧮 Chemistry Calculator
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('reactivity-series.html')">
+
+            🔥 Reactivity Series
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('atomic-structure.html')">
+
+            ⚛️ Atomic Structure Explorer
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('radioactivity.html')">
+
+            ☢️ Radioactivity Explorer
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('glossary.html')">
+
+            📚 Chemistry Glossary
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('chemistry-quizzes.html')">
+
+            🧠 Chemistry Quizzes
+
+        </div>
+
+
+        <div class="tool"
+             onclick="openTool('chemistry-revision.html')">
+
+            🎓 Examination Revision
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACADEMIC ADVICE
+===================================================== -->
+
+<section class="advice">
+
+    <h2>
+        💡 CHEMISTRY STUDY ADVICE
+    </h2>
+
+    <p>
+
+        <strong>
+            Do not study Chemistry only to memorize it.
+            Study it to understand it.
+        </strong>
+
+    </p>
+
+    <p>
+
+        Understand the particles, reactions,
+        observations and reasons behind chemical
+        processes. Then practise applying what you
+        know to new situations.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h2>
+        AT'EVIE PROCOMPETENCE LEARNING HUB
+    </h2>
+
+    <p>
+        Chemistry • Learn • Explore • Experiment • Excel
+    </p>
+
+    <p>
+        © 2026 AT'EVIE Procompetence Learning Hub
+    </p>
+
+    <p class="motto">
+        Curiosity • Knowledge • Research • Innovation
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function openLesson(topic) {
+
+    localStorage.setItem(
+        "selectedChemistryLesson",
+        topic
+    );
+
+    window.location.href =
+        "lesson.html";
+
+}
+
+
+function openTool(page) {
+
+    window.location.href = page;
+
+}
+
+</script>
+
+
+</body>
+</html>
